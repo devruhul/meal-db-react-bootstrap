@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from '../shared/Footer/Footer';
 import Header from '../shared/Header/Header';
 import about from '../images/about-us.jpg'
+import { Link } from 'react-router-dom';
 const AboutUs = () => {
     return (
         <div className='container'>
@@ -18,7 +19,11 @@ const AboutUs = () => {
                 Enjoy our dazzling dishes and make the most of your eating background with us!
             </p>
 
-            <Footer> </Footer>
+            <Footer>
+                <Link to="/">
+                    <button> Home</button>
+                </Link>
+            </Footer>
         </div>
     );
 };

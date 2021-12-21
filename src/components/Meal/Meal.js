@@ -7,7 +7,7 @@ const Meal = (props) => {
     return (
         <div className=' fluid meal-container meal-box'>
             <Card border="info" style={{ width: '18rem' }}>
-                <img src={strMealThumb} class="card-img-top" alt="..." />
+                <img src={strMealThumb} className="card-img-top" alt="..." />
                 <Card.Body>
                     <Card.Title>{strMeal}</Card.Title>
                     <Card.Text>
@@ -16,8 +16,6 @@ const Meal = (props) => {
                 </Card.Body>
             </Card>
         </div>
-
-
     );
 };
 

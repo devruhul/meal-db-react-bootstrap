@@ -23,7 +23,6 @@ const Meals = () => {
                     meal={meal}
                 ></Meal>)}
             </div>
-
             <div>
                 <Card>
                     <Card.Header as="h2">Meal DB</Card.Header>

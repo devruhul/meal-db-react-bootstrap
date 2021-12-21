@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
 
-const Footer = () => {
+const Footer = (props) => {
     return (
         <div>
             <Card className='container'>
@@ -13,6 +13,7 @@ const Footer = () => {
                         Enjoy our dazzling dishes and make the most of your eating background with us!
                     </Card.Text>
                     <Button variant="primary"> Plese go to meals section and check out our food</Button>
+                    {props.children}
                 </Card.Body>
             </Card>
         </div>
