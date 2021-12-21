@@ -2,7 +2,6 @@ import React from 'react';
 import Footer from '../shared/Footer/Footer';
 import Header from '../shared/Header/Header';
 import about from '../images/about-us.jpg'
-import { Link } from 'react-router-dom';
 const AboutUs = () => {
     return (
         <div className='container'>
@@ -20,9 +19,6 @@ const AboutUs = () => {
             </p>
 
             <Footer>
-                <Link to="/">
-                    <button> Home</button>
-                </Link>
             </Footer>
         </div>
     );
