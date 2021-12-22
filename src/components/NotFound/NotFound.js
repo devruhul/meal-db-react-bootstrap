@@ -1,9 +1,15 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import notFound from '../images/404-error-page.jpg'
 
 const NotFound = () => {
     return (
         <div>
-            <h2>Not found 404 error</h2>
+            <img src={notFound} alt="" />
+            <Link to="/">
+                <Button variant="primary">Go To Homepage</Button>
+            </Link>
         </div>
     );
 };
