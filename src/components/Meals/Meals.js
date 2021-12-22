@@ -1,9 +1,7 @@
-
 import React, { useEffect, useState } from 'react';
 import './Meals.css'
 import Meal from '../Meal/Meal';
 import { Card } from 'react-bootstrap';
-import Header from '../shared/Header/Header';
 
 const Meals = () => {
     const [meals, setMeals] = useState([])
@@ -16,7 +14,6 @@ const Meals = () => {
 
     return (
         <div >
-            <Header></Header>
             <div className='meal-container' >
                 {meals.map(meal => <Meal
                     key={meal.idMeal}

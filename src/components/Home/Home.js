@@ -1,7 +1,5 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import Footer from '../shared/Footer/Footer';
-import Header from '../shared/Header/Header';
 import carousel1 from '../images/carousel-1.png'
 import carousel2 from '../images/carousel-2.png'
 import carousel3 from '../images/carousel-3.png'
@@ -9,7 +7,6 @@ import './Home.css'
 const Home = () => {
     return (
         <div>
-            <Header></Header>
             <Carousel fade className='container'>
                 <Carousel.Item className='meal-image'>
                     <img
@@ -47,7 +44,6 @@ const Home = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-            <Footer></Footer>
         </div>
     );
 };

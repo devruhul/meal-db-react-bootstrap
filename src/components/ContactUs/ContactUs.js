@@ -1,7 +1,5 @@
 import React from 'react';
 import { Button, Col, FloatingLabel, Form, Row } from 'react-bootstrap';
-import Footer from '../shared/Footer/Footer';
-import Header from '../shared/Header/Header';
 import contact from '../images/contact-us.jpg'
 import { Link } from 'react-router-dom';
 import './Contact.css'
@@ -9,7 +7,6 @@ import './Contact.css'
 const ContactUs = () => {
     return (
         <div>
-            <Header></Header>
             <img src={contact} alt="" />
             <br /> <br /> <br /> <br />
             <Form className='container'>
@@ -35,10 +32,8 @@ const ContactUs = () => {
                 <Button type="submit">
                     <Link className="text-light" to="/">Submit</Link>
                 </Button>
-
             </Form>
             <br />
-            <Footer></Footer>
         </div>
     );
 };
